@@ -1,0 +1,97 @@
+/* ===== Reset básico ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ===== Fundo da página ===== */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #4b79a1, #283e51);
+}
+
+/* ===== Container do Login ===== */
+.login-container {
+    background: #ffffff;
+    width: 350px;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.8s ease;
+}
+
+/* Título */
+.login-container h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+/* ===== Input ===== */
+.login-container input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.login-container input:focus {
+    border-color: #4b79a1;
+    box-shadow: 0 0 5px rgba(75, 121, 161, 0.5);
+    outline: none;
+}
+
+/* ===== Botão ===== */
+.login-container button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    background: #4b79a1;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login-container button:hover {
+    background: #35516a;
+}
+
+/* ===== Links ===== */
+.login-container .links {
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 14px;
+}
+
+.login-container .links a {
+    color: #4b79a1;
+    text-decoration: none;
+}
+
+.login-container .links a:hover {
+    text-decoration: underline;
+}
+
+/* ===== Animação ===== */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
